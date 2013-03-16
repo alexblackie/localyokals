@@ -1,0 +1,56 @@
+doctype html
+
+head
+  meta charset="UTF-8"
+
+  title #{ data.page.title || "Untitled" } &rsaquo; Local Yokals Society
+
+  | <!--[if lt IE 9]>
+  == javascript_include_tag "html5shiv.js"
+  | <![endif]-->
+
+  | <!--[if lt IE 7]>
+  == stylesheet_link_tag "old-browser"
+  | <![endif]-->
+
+  == stylesheet_link_tag "//fonts.googleapis.com/css?family=Open+Sans"
+  == stylesheet_link_tag "site"
+  - if data.page.gallery == true
+    == stylesheet_link_tag "lightbox"
+
+  | <!--[if lt IE 7]>
+  == stylesheet_link_tag "old-browser"
+  | <![endif]-->
+
+body class="#{page_classes}"
+  header.site-header
+    .container
+      hgroup
+        h1
+          a href="/" Cultivating Local Yokals
+
+      == partial "layouts/menu"
+
+  .contentwrapper
+    .container
+      .content
+        == yield 
+
+      .sidebar
+        .widget
+          h2 Support Our Society
+          p If you would like to show your support for our society, we would appreciate anything you can do!
+          p.important
+            == link_to "Donate", "/donate"
+            | &nbsp; or &nbsp;
+            == link_to "Volunteer", "/contact"
+
+  - if data.page.gallery == true
+    == javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    == javascript_include_tag "lightbox"
+
+    javascript:
+      $(document).ready(function(){
+        $("a.lightbox").fancybox()
+      });
+

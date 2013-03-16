@@ -1,0 +1,25 @@
+doctype html
+
+head
+  meta charset="UTF-8"
+
+  title #{ data.page.title || "Untitled" } &rsaquo; Local Yokals Society
+
+  | <!--[if lt IE 9]>
+  == javascript_include_tag "html5shiv.js"
+  | <![endif]-->
+
+  == stylesheet_link_tag "//fonts.googleapis.com/css?family=Open+Sans"
+  == stylesheet_link_tag "home"
+
+  | <!--[if lt IE 7]>
+  == stylesheet_link_tag "old-browser-home"
+  | <![endif]-->
+
+body class="#{page_classes}"
+
+  header.site-header
+    h1
+      a href="/" Cultivating Local Yokals
+
+  == partial "layouts/menu"
