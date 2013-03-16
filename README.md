@@ -11,7 +11,7 @@ This is a [Middleman](http://middlemanapp.com/)-powered website, meaning what's 
 1. Clone the repo: `git clone git://github.com/alexblackie/localyokals.git; cd localyokals`
 2. Install the dependencies: `bundle install`
 3. Run the server: `bundle exec middleman s`
-4. Visit http://localhost:4567/
+4. Visit `http://localhost:4567/`
 
 ## Deploying
 
