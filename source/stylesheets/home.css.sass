@@ -1,5 +1,6 @@
 @import "base"
 
+$haps-height: 50px
 
 //-----------------------------------------------------------------------------
 // Reset
@@ -31,9 +32,35 @@ body
       text-decoration: none
       color: $yellow
 
+.the-haps
+  +container
+  width: columns(6)
+  height: $haps-height
+  margin-top: 40px
+  text-align: center
+  background:
+    image: image-url("latest-news-bg.png")
+    position: 50% 50%
+    repeat: no-repeat
+
+  > h2
+    +span-columns(5, 12)
+    margin-top: 0
+    margin-bottom: 0
+    font:
+      size: 14px
+      weight: 700
+    line-height: $haps-height
+    text-transform: uppercase
+    text-align: right
+
+  > p
+    +span-columns(7 omega, 12)
+    text-align: left
+
 .main-menu
   +pie-clearfix
-  margin-top: 50px
+  margin-top: 30px
   text-align: center
 
   ul
