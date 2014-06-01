@@ -12,10 +12,3 @@ This is a [Middleman](http://middlemanapp.com/)-powered website, meaning what's 
 2. Install the dependencies: `bundle install`
 3. Run the server: `bundle exec middleman s`
 4. Visit `http://localhost:4567/`
-
-## Deploying
-
-I have a [Git post-receive hook](https://gist.github.com/alexblackie/4681698) that will automagically deploy a Middleman site when it receives a push from your local Git repository. This makes deploying changes as easy as `git push`.
-
-Otherwise, run `bundle exec middleman build` and upload the contents of the `./build` directory to the server.
-
