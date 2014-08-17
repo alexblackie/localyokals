@@ -1,5 +1,6 @@
 require 'susy'
 
+activate :dotenv
 activate :automatic_image_sizes
 activate :directory_indexes
 
