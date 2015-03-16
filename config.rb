@@ -21,6 +21,13 @@ activate :sync do |sync|
 	sync.after_build           = false
 end
 
+activate :cloudfront do |cf|
+  cf.access_key_id     = ENV["AWS_ACCESS"]
+  cf.secret_access_key = ENV["AWS_SECRET"]
+  cf.distribution_id   = ENV["AWS_CFDIST"]
+  cf.after_build       = false
+end
+
 # Build-specific configuration
 configure :build do
 	activate :minify_css
