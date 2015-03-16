@@ -1,4 +1,5 @@
-@import "base"
+@import base
+@import reset
 
 $haps-height: 50px
 
@@ -6,87 +7,80 @@ $haps-height: 50px
 // Reset
 //-----------------------------------------------------------------------------
 body
-  background:
-    image: image-url("background-home.jpg")
-    position: 50% 0
-    repeat: no-repeat
-    size: 100%
+	background-image: image-url("background-home.jpg")
+	background-position: 50% 0
+	background-repeat: no-repeat
+	background-size: 100%
 
 
 //-----------------------------------------------------------------------------
 // Layout
 //-----------------------------------------------------------------------------
-.site-header
-  > h1
-    margin: 200px 0 0 0
-    font:
-      size: 80px
-      family: $primary-font-family
-      weight: 700
-    line-height: 1em
-    text-align: center
-    letter-spacing: -2px
-    text-shadow: 0 1px 2px rgba(black, 0.4)
+.site-header > h1
+	margin: 200px 0 0 0
+	font-size: 80px
+	font-family: $primary-font-family
+	font-weight: 700
+	line-height: 1em
+	text-align: center
+	letter-spacing: -2px
+	text-shadow: 0 1px 2px rgba(black, 0.4)
 
-    > a
-      text-decoration: none
-      color: $yellow
+	> a
+		text-decoration: none
+		color: $yellow
 
 .the-haps
-  +container
-  width: columns(6)
-  height: $haps-height
-  margin-top: 40px
-  text-align: center
-  background:
-    image: image-url("latest-news-bg.png")
-    position: 50% 50%
-    repeat: no-repeat
+	+container
+	width: columns(6)
+	height: $haps-height
+	margin-top: 40px
+	text-align: center
+	background-image: image-url("latest-news-bg.png")
+	background-position: 50% 50%
+	background-repeat: no-repeat
 
-  > h2
-    +span-columns(5, 12)
-    margin-top: 0
-    margin-bottom: 0
-    font:
-      size: 14px
-      weight: 700
-    line-height: $haps-height
-    text-transform: uppercase
-    text-align: right
+	> h2
+		+span-columns(5, 12)
+		margin-top: 0
+		margin-bottom: 0
+		font-size: 14px
+		font-weight: 700
+		line-height: $haps-height
+		text-transform: uppercase
+		text-align: right
 
-  > p
-    +span-columns(7 omega, 12)
-    text-align: left
+	> p
+		+span-columns(7 omega, 12)
+		text-align: left
 
 .main-menu
-  +pie-clearfix
-  margin-top: 30px
-  text-align: center
+	+pie-clearfix
+	margin-top: 30px
+	text-align: center
 
-  ul
-    margin: 0
-    list-style: none
+	ul
+		margin: 0
+		list-style: none
 
-    > li
-      display: inline
-      margin: 0 5px
+		> li
+			display: inline
+			margin: 0 5px
 
-      > a
-        display: inline-block
-        height: $home-menu-height
-        padding: 0 10px
-        font:
-          size: 16px
-          family: $primary-font-family
-          weight: 400
-        line-height: $home-menu-height
-        text-decoration: none
-        color: #F2B7BD
-        background: $link-color
-        +border-radius(0 6px 0 6px)
-        +box-shadow(0 0 20px rgba(black, 0.2))
+			> a
+				display: inline-block
+				height: $home-menu-height
+				padding: 0 10px
+				font-size: 16px
+				font-family: $primary-font-family
+				font-weight: 400
+				line-height: $home-menu-height
+				text-decoration: none
+				color: #F2B7BD
+				background: $link-color
+				border-radius: 0 6px 0 6px
+				box-shadow: 0 0 20px rgba(black, 0.2)
 
-        &:hover
-          text-decoration: none
-          color: white
-
+				&:hover
+					text-decoration: none
+					color: white

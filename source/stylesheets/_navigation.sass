@@ -1,0 +1,41 @@
+//-----------------------------------------------------------------------------
+// Navigation
+//-----------------------------------------------------------------------------
+.main-menu
+  +pie-clearfix
+
+  ul
+    margin: 0
+    list-style: none
+
+    > li
+      display: inline
+      margin: 0 5px
+
+      > a
+        display: inline-block
+        height: $menu-height - 5px
+        padding: 0 10px
+        font-size: 16px
+        font-family: $primary-font-family
+        font-weight: 400
+        line-height: $menu-height
+        text-decoration: none
+        color: #F2B7BD
+        border-width: 0 0 5px
+        border-style: solid
+        border-color: transparent
+
+        &:hover
+          text-decoration: none
+          color: white
+
+body.news #nav-news > a,
+body.projects #nav-projects > a,
+body.photos #nav-photos > a,
+body.about #nav-about > a,
+body.sponsors #nav-sponsors > a,
+body.contact #nav-contact > a,
+body.donate #nav-donate > a
+  color: white
+  border-color: $yellow
