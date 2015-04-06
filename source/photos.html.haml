@@ -4,17 +4,15 @@ style: ["lightbox", "pages/photos"]
 js: ["http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", "lightbox"]
 ---
 
-%h1.page-title Photo Gallery
-
 %section.gallery#boating
 	%header
-		%h2 Boating &amp; Fishing
+		%h1 Boating &amp; Fishing
 
 	= photo_gallery_for('source/images/gallery/boating/*.jpg')
 
 %section.gallery#aroundthefarm
 	%header
-		%h2 Around the Farm
+		%h1 Around the Farm
 
 	= photo_gallery_for('source/images/gallery/around-the-farm/*.jpg')
 
