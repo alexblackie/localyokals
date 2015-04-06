@@ -6,6 +6,28 @@ js: ["http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", "lightbo
 
 %h1.page-title Photo Gallery
 
+%section.gallery#boating
+	%header
+		%h2 Boating &amp; Fishing
+
+	%article.photo
+		%figure= link_to image_tag("gallery/boating/thumbs/boat01_thumb.jpg"), image_path("gallery/boating/boat01.jpg"), class: "lightbox"
+
+	%article.photo
+		%figure= link_to image_tag("gallery/boating/thumbs/boat02_thumb.jpg"), image_path("gallery/boating/boat02.jpg"), class: "lightbox"
+
+	%article.photo
+		%figure= link_to image_tag("gallery/boating/thumbs/boat03_thumb.jpg"), image_path("gallery/boating/boat03.jpg"), class: "lightbox"
+
+	%article.photo
+		%figure= link_to image_tag("gallery/boating/thumbs/boat04_thumb.jpg"), image_path("gallery/boating/boat04.jpg"), class: "lightbox"
+
+	%article.photo
+		%figure= link_to image_tag("gallery/boating/thumbs/boat05_thumb.jpg"), image_path("gallery/boating/boat05.jpg"), class: "lightbox"
+
+	%article.photo
+		%figure= link_to image_tag("gallery/boating/thumbs/boat06_thumb.jpg"), image_path("gallery/boating/boat06.jpg"), class: "lightbox"
+
 %section.gallery#aroundthefarm
 	%header
 		%h2 Around the Farm
