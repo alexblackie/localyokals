@@ -11,8 +11,8 @@ set :haml, { ugly: true }
 
 activate :deploy do |deploy|
   deploy.method = :rsync
-  deploy.host   = 'edge01'
-  deploy.path   = '/srv/www/localyokals.ca'
+  deploy.host   = 'www01'
+  deploy.path   = '/usr/local/www/localyokals.ca'
   deploy.user   = 'deploy'
   deploy.clean  = true
 end
