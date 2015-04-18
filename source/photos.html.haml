@@ -10,75 +10,13 @@ js: ["http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", "lightbo
 	%header
 		%h2 Boating &amp; Fishing
 
-	%article.photo
-		%figure= link_to image_tag("gallery/boating/thumbs/boat01_thumb.jpg"), image_path("gallery/boating/boat01.jpg"), class: "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/boating/thumbs/boat02_thumb.jpg"), image_path("gallery/boating/boat02.jpg"), class: "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/boating/thumbs/boat03_thumb.jpg"), image_path("gallery/boating/boat03.jpg"), class: "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/boating/thumbs/boat04_thumb.jpg"), image_path("gallery/boating/boat04.jpg"), class: "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/boating/thumbs/boat05_thumb.jpg"), image_path("gallery/boating/boat05.jpg"), class: "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/boating/thumbs/boat06_thumb.jpg"), image_path("gallery/boating/boat06.jpg"), class: "lightbox"
+	= photo_gallery_for('source/images/gallery/boating/*.jpg')
 
 %section.gallery#aroundthefarm
 	%header
 		%h2 Around the Farm
 
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_022.jpg"), image_path("gallery/around-the-farm/022.jpg"), :class => "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_50-th-annual-picnic.jpg"), image_path("gallery/around-the-farm/50-th-annual-picnic.jpg"), :class => "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_061.jpg"), image_path("gallery/around-the-farm/061.jpg"), :class => "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_068.jpg"), image_path("gallery/around-the-farm/068.jpg"), :class => "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_072.jpg"), image_path("gallery/around-the-farm/072.jpg"), :class => "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_alex-from-ocean-radio-station-2.jpg"), image_path("gallery/around-the-farm/alex-from-ocean-radio-station-2.jpg"), :class => "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_chicken-tractor-2.jpg"), image_path("gallery/around-the-farm/chicken-tractor-2.jpg"), :class => "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_finising-our-sign.jpg"), image_path("gallery/around-the-farm/finising-our-sign.jpg"), :class => "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_friends-in-the-garden-dleft-to-right-leo-doug-andrichard.jpg"), image_path("gallery/around-the-farm/friends-in-the-garden-dleft-to-right-leo-doug-andrichard.jpg"), :class => "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_home-made-composter.jpg"), image_path("gallery/around-the-farm/home-made-composter.jpg"), :class => "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_picture-032.jpg"), image_path("gallery/around-the-farm/picture-032.jpg"), :class => "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_punpkin-harvesting.jpg"), image_path("gallery/around-the-farm/punpkin-harvesting.jpg"), :class => "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_the-squash-patch.jpg"), image_path("gallery/around-the-farm/the-squash-patch.jpg"), :class => "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_these-hole-are-made-by-nematodes-garden-pests.jpg"), image_path("gallery/around-the-farm/these-hole-are-made-by-nematodes-garden-pests.jpg"), :class => "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_tomatoes-on-the-run.jpg"), image_path("gallery/around-the-farm/tomatoes-on-the-run.jpg"), :class => "lightbox"
-
-	%article.photo
-		%figure= link_to image_tag("gallery/around-the-farm/thumbs/thumbs_volunteers-from-pearson-colege.jpg"), image_path("gallery/around-the-farm/volunteers-from-pearson-colege.jpg"), :class => "lightbox"
+	= photo_gallery_for('source/images/gallery/around-the-farm/*.jpg')
 
 :javascript
 	window.onload = function () {
