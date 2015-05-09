@@ -11,10 +11,10 @@ body
 
 a
 	text-decoration: underline
-	color: $link-color
+	color: $color-link
 
 	&:hover
-		color: lighten($link-color, 5%)
+		color: lighten($color-link, 5%)
 
 ul, ol
 	margin: 1em 0 1em 2em
@@ -38,7 +38,7 @@ blockquote
 	margin: 1em
 	padding-left: 1em
 	font-style: italic
-	border-width: 0 0 0 0.1875em
+	border-width: 0 0 0 10px
 	border-style: solid
 	border-color: #ccc
 
@@ -46,17 +46,10 @@ img
 	display: block
 	max-width: 100%
 	height: auto
-	line-height: 0px
+	line-height: 0
 
 p
 	margin: 1em 0
 
 strong
 	font-weight: bold
-
-figure
-	&.alignleft
-		margin-right: 20px
-
-	&.alignright
-		margin-left: 20px

@@ -24,7 +24,7 @@
 %body{class: page_classes}
 	%header.site-header
 		.container
-			%hgroup
+			.site-header-logo
 				%h1= link_to "Cultivating Local Yokals", "/"
 			= partial "layouts/menu"
 
@@ -35,11 +35,13 @@
 			.sidebar
 				.widget
 					%h2 Support Our Society
-					%p If you would like to show your support for our society, we would appreciate anything you can do!
+					%p
+						If you would like to show your support for our society,
+						we would appreciate anything you can do!
 					%p.important
-						= link_to "Donate", "/donate"
+						= link_to "Donate", "/donate", class: "button button-donate"
 						&nbsp; or &nbsp;
-						= link_to "Volunteer", "/contact"
+						= link_to "Volunteer", "/contact", class: "button button-volunteer"
 
 	= partial "layouts/analytics"
 
