@@ -1,21 +1,21 @@
 //-----------------------------------------------------------------------------
 // Susy Config
 //-----------------------------------------------------------------------------
-$susy: (columns: 12)
+$susy: (columns: 12);
 
 //-----------------------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------------------
-$content-padding: 20px
-$header-height: 60px
-$menu-height: $header-height
+$content-padding: 20px;
+$header-height: 60px;
+$menu-height: $header-height;
 
-$primary-font-family: "PT Sans", Helvetica, sans-serif
+$primary-font-family: "PT Sans", Helvetica, sans-serif;
 
-$color-grey-dark: #444
-$color-red: #CD1A2C
+$color-grey-dark: #444;
+$color-red: #CD1A2C;
 
-$color-text: $color-grey-dark
-$color-link: $color-red
-$color-background-button: $color-red
-$color-border-button: darken($color-red, 5%)
+$color-text: $color-grey-dark;
+$color-link: $color-red;
+$color-background-button: $color-red;
+$color-border-button: darken($color-red, 5%);

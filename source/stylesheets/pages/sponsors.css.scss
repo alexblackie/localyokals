@@ -1,0 +1,10 @@
+@import "base";
+
+.sponsors {
+  ul {
+    list-style: disc;
+    > li {
+      margin-bottom: 5px;
+    }
+  }
+}
