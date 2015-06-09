@@ -1,0 +1,31 @@
+---
+title: St. Michael's Students Volunteer at Fleming Owl Cherry Orchard
+date: 2014-04-03
+style: ["lightbox"]
+js: ["http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", "lightbox"]
+---
+
+%h1 St. Michael's Students Volunteer at Fleming Owl Cherry Orchard
+
+%iframe(src="https://player.vimeo.com/video/130166055?portrait=0" width="635" height="476" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="")
+
+%p
+	The Cultivating Local Yokals Society, with the help of students from St.
+	Michael's University School, helped clean out ivy from an orchard in
+	Esquimalt.
+
+.tiles.tiles-two-up
+	%figure
+		= link_to image_path("news/st-michaels-fleming/before.jpg"), class: "lightbox" do
+			= image_tag("news/st-michaels-fleming/before_thumb.jpg")
+		%figcaption Before
+
+	%figure
+		= link_to image_path("news/st-michaels-fleming/after.jpg"), class: "lightbox" do
+			= image_tag("news/st-michaels-fleming/after_thumb.jpg")
+		%figcaption After
+
+:javascript
+	window.onload = function () {
+		jQuery("a.lightbox").fancybox();
+	};
