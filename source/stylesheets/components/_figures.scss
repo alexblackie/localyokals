@@ -1,0 +1,16 @@
+.tiles {
+	@include pie-clearfix;
+}
+
+.tiles-two-up figure {
+	@include span(6);
+	text-align: center;
+
+	&:nth-of-type(2n+2) {
+		@include omega;
+	}
+
+	figcaption {
+		margin: 5px 0 0;
+	}
+}
