@@ -1,3 +1,4 @@
+require "compass"
 require "susy"
 
 # Haml 5 is _noisy_ for a internal middleman things I don't care about.
