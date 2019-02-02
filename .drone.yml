@@ -1,3 +1,4 @@
+---
 kind: pipeline
 name: default
 
@@ -33,3 +34,7 @@ volumes:
 trigger:
   branch:
     - master
+
+---
+kind: signature
+hmac: 5e02c1304903bb3c59b2be97fb144269a3893efeaaf7a2cf140fea310928acfa
