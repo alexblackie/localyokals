@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -euf -o pipefail
+
+ELEVENTY_PRODUCTION=1
+
+npm install
+npx eleventy
