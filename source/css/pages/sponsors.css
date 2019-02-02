@@ -1,0 +1,7 @@
+.sponsors ul {
+  list-style: disc;
+}
+
+.sponsors ul > li {
+  margin-bottom: 5px;
+}

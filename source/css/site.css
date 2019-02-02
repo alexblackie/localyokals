@@ -1,0 +1,282 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption,
+td,
+th {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+    content: none;
+}
+a img {
+    border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+body {
+    font-family: "PT Sans", Helvetica, sans-serif;
+    background-image: url("/images/background.jpg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: underline;
+    color: #CD1A2C;
+}
+
+a:hover {
+    color: #e21e32;
+}
+
+ol,
+ul {
+    margin: 1em 0 1em 2em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1em 0;
+    font-family: "PT Sans", Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 25px;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 16px;
+}
+blockquote {
+    margin: 1em;
+    padding-left: 1em;
+    font-style: italic;
+    border-width: 0 0 0 10px;
+    border-style: solid;
+    border-color: #ccc;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    line-height: 0;
+}
+p {
+    margin: 1em 0;
+}
+strong {
+    font-weight: bold;
+}
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+.site-header {
+    position: relative;
+    height: 60px;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.site-header-logo {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+}
+.site-header-logo h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 60px;
+    text-indent: 45px;
+    background-image: url("/images/scarecrow.png");
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+}
+.site-header-logo h1 > a {
+    text-decoration: none;
+    color: #444;
+}
+.main-menu {
+    width: 66.10169%;
+    float: right;
+    margin-right: 0;
+    text-align: right;
+}
+.main-menu ul {
+    margin: 0;
+    list-style: none;
+}
+.main-menu li {
+    display: inline-block;
+}
+.main-menu a {
+    display: inline-block;
+    height: 55px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-family: "PT Sans", Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 60px;
+    text-decoration: none;
+    color: #444;
+    border-width: 0 0 5px;
+    border-style: solid;
+    border-color: transparent;
+}
+.main-menu a:hover {
+    text-decoration: none;
+    color: #CD1A2C;
+}
+body.about #nav-about > a,
+body.contact #nav-contact > a,
+body.donate #nav-donate > a,
+body.index #nav-news > a,
+body.photos #nav-photos > a,
+body.projects #nav-projects > a,
+body.sponsors #nav-sponsors > a {
+    color: #444;
+    border-color: #CD1A2C;
+}
+.contentwrapper {
+    padding: 20px;
+}
+.content {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+}
+.content p {
+    line-height: 1.5em;
+}
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+}
+figure.alignleft,
+img.alignleft {
+    margin-right: 1em;
+}
+figure.alignright,
+img.alignright {
+    margin-left: 1em;
+}
+.page-title {
+    margin: 0 0 20px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+.intro {
+    margin: 0 0 1em;
+    padding: 20px 0;
+    font-size: 25px;
+    font-family: "PT Sans", Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 1.75em;
+    border-bottom: 3px solid black;
+}
+.sidebar {
+    width: 23.72881%;
+    float: right;
+    margin-right: 0;
+    padding-left: 8.47458%;
+}
+.sidebar h1 {
+    margin: 0 0 0.5em;
+    font-size: 2em;
+}
+.sidebar .widget p {
+    line-height: 1.4em;
+}
+.sidebar .widget .important {
+    text-align: center;
+}
+.sidebar .widget a {
+    text-decoration: none;
+}
+.button {
+    display: inline-block;
+    padding: 5px 8px;
+    line-height: 1em;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    color: white;
+    background: #CD1A2C;
+    border: 3px solid #b61727;
+    border-radius: 5px;
+}
+.button:hover {
+    color: white;
+    background-color: #b61727;
+    border-color: #a01422;
+}
+.tiles {
+    *zoom: 1;
+}
+.tiles:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.tiles-two-up figure {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    text-align: center;
+}
+.tiles-two-up figure:nth-of-type(2n+2) {
+    float: right;
+    margin-right: 0;
+}
+.tiles-two-up figure figcaption {
+    margin: 5px 0 0;
+}
