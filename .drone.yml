@@ -6,6 +6,7 @@ steps:
 - name: build
   image: ruby
   commands:
+    - gem update bundler
     - bundle install --deployment
     - bundle exec middleman build --verbose
   volumes:
