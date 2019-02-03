@@ -3,8 +3,8 @@
 }
 .news-by-year > section > header h2 {
     margin: 1 0 10px;
-    font-size: 25px;
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: normal;
     line-height: 1.2em;
 }
 .news-by-year > section > .news-list {
@@ -15,7 +15,7 @@
 }
 .news-by-year > section > .news-list > li > a {
     display: block;
-    padding: 5px;
+    padding: 0.1em;
     text-decoration: none;
     border-width: 0 0 1px;
     border-style: dotted;
@@ -23,12 +23,4 @@
 }
 .news-by-year > section > .news-list > li > a:hover {
     text-decoration: underline;
-}
-article.news.single > header h1 {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 1.2em;
-}
-article.news.single .post-meat p {
-    line-height: 1.6em;
 }

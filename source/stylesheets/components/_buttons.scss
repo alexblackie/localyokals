@@ -6,14 +6,14 @@
 
 .button {
   display: inline-block;
-  padding: 5px 8px;
+  padding: 0.5em 1em;
   line-height: 1em;
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(0,0,0,0.2);
   color: white;
   background: $color-highlight;
   border: 3px solid $color-highlight-dark;
-  border-radius: 5px;
+  border-radius: 0.25em;
 }
   .button:hover {
     color: $color-text-inverse;
