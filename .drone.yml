@@ -7,7 +7,7 @@ steps:
   image: ruby
   commands:
     - gem update bundler
-    - bundle install --deployment
+    - bundle install --deployment --with ci
     - bundle exec middleman build --verbose
   volumes:
     - name: cache
