@@ -1,0 +1,19 @@
+/******************************************************************************
+ * Page Title Hero
+ *
+ * Displays the page title above the content, overlayed on a background image.
+ */
+
+.page-title-hero {
+  padding-top: 33vh;
+  background: url("/images/tractor-background.jpg") no-repeat center top;
+  background-size: cover;
+
+
+  .page-title {
+    display: inline-block;
+    margin: 0;
+    padding: 0.25em 1.5em;
+    background-color: $color-background-content;
+  }
+}

@@ -7,12 +7,12 @@
 
 .contentwrapper {
   padding: 1.25rem;
+  background: $color-background-content;
 }
 
 .content {
   width: 70%;
   float: left;
-  overflow: hidden;
 }
 
 .content p {
@@ -35,13 +35,6 @@ img.alignleft {
 figure.alignright,
 img.alignright {
   margin-left: 1em;
-}
-
-.page-title {
-  margin: 0 0 0.5em;
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.1em;
 }
 
 .intro {

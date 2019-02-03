@@ -28,6 +28,12 @@
       </nav>
     </div></header>
 
+    <% if current_page.data.show_title %>
+    <div class="page-title-hero"><div class="container">
+      <h1 class="page-title"><%= current_page.data.title %></h1>
+    </div></div>
+    <% end %>
+
     <div class="contentwrapper"><div class="container">
       <div class="content">
         <%= yield %>
