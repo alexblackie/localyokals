@@ -1,0 +1,21 @@
+/******************************************************************************
+ * Tiles
+ *
+ * Useful if you just have a couple things you want side-by-side. Great for
+ * images, or even just "info boxes" or whatever.
+ */
+
+.tiles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tiles-two-up figure {
+  box-sizing: border-box;
+  width: 50%;
+  padding-right: 0.5rem;
+  text-align: center;
+}
+  .tiles-two-up figure figcaption {
+    margin: 0.5em 0 0;
+  }

@@ -1,0 +1,22 @@
+/******************************************************************************
+ * Buttons!
+ *
+ * More enticing than a boring link.
+ */
+
+.button {
+  display: inline-block;
+  padding: 5px 8px;
+  line-height: 1em;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  color: white;
+  background: #CD1A2C;
+  border: 3px solid #b61727;
+  border-radius: 5px;
+}
+  .button:hover {
+    color: white;
+    background-color: #b61727;
+    border-color: #a01422;
+  }

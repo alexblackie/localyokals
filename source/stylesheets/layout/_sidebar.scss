@@ -1,0 +1,25 @@
+/******************************************************************************
+ * Sidebar
+ *
+ * Ancillary content off to the side for optional perusal.
+ */
+
+.sidebar {
+  width: 23.72881%;
+  float: right;
+  margin-right: 0;
+  padding-left: 8.47458%;
+}
+  .sidebar h1 {
+    margin: 0 0 0.5em;
+    font-size: 2em;
+  }
+  .sidebar .widget p {
+    line-height: 1.4em;
+  }
+  .sidebar .widget .important {
+    text-align: center;
+  }
+  .sidebar .widget a {
+    text-decoration: none;
+  }

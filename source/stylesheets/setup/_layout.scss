@@ -1,0 +1,26 @@
+/******************************************************************************
+ * Layout
+ *
+ * Styles fundamental to the high-level structure and layout of the site.
+ */
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .container::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+.contentwrapper {
+  padding: 20px;
+}
+
+.content {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+}
