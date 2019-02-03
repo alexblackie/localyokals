@@ -5,6 +5,16 @@
  * pages itself.
  */
 
+.contentwrapper {
+  padding: 20px;
+}
+
+.content {
+  width: 70%;
+  float: left;
+  overflow: hidden;
+}
+
 .content p {
   line-height: 1.5em;
 }

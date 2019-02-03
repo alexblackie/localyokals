@@ -1,0 +1,26 @@
+@media screen and (max-width: 900px) {
+  .site-header {
+    height: auto;
+    text-align: center;
+  }
+
+  .site-header-logo {
+    float: none;
+  }
+
+  .main-menu {
+    float: none;
+    text-align: center;
+  }
+
+  .content {
+    width: auto;
+    float: none;
+  }
+
+  .sidebar {
+    float: none;
+    margin-top: 2rem;
+  }
+
+}
