@@ -17,3 +17,10 @@
 // Components: reusable building blocks
 @import "components/tiles";
 @import "components/buttons";
+@import "components/gallery";
+
+// Pages: page-specific styles
+@import "pages/contact";
+@import "pages/news";
+@import "pages/projects";
+@import "pages/sponsors";
