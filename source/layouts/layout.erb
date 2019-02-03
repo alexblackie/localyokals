@@ -5,9 +5,9 @@
     <title><%= current_page.data.title %> - Cultivating Local Yokals</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" type="text/css">
     <link rel="stylesheet" href="/stylesheets/site.css" type="text/css">
-    <% current_page.data.style.each do |sheet| %>
+    <% current_page.data.stylesheets.each do |sheet| %>
       <link rel="stylesheet" href="/stylesheets/<%= sheet %>.css" type="text/css">
-    <% end if current_page.data.style %>
+    <% end if current_page.data.stylesheets %>
   </head>
   <body class="<%= current_page.data.page_class %>">
 
@@ -51,9 +51,9 @@
       </div>
     </div></div>
 
-    <% current_page.data.js.each do |script| %>
+    <% current_page.data.javascripts.each do |script| %>
       <script src="/javascripts/<%= script %>.js"></script>
-    <% end if current_page.data.js %>
+    <% end if current_page.data.javascripts %>
 
     <% if build? %>
       <script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,"script","//www.google-analytics.com/analytics.js","ga"); ga("create", "UA-60803324-1", "auto"); ga("send", "pageview");</script>
