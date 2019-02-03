@@ -9,6 +9,10 @@ body {
   color: $color-text;
 }
 
+*:focus {
+  outline: 3px solid $color-highlight-alt;
+}
+
 a {
   text-decoration: underline;
   color: $color-highlight;
