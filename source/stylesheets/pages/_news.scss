@@ -1,26 +1,8 @@
 .news-by-year > section {
-    margin: 0 0 30px;
+    margin: 0 0 2rem;
 }
 .news-by-year > section > header h2 {
-    margin: 1 0 10px;
+    margin: 1em 0 0.5em;
     font-size: 1.5rem;
-    font-weight: normal;
     line-height: 1.2em;
-}
-.news-by-year > section > .news-list {
-    margin: 1em;
-}
-.news-by-year > section > .news-list > li {
-    display: block;
-}
-.news-by-year > section > .news-list > li > a {
-    display: block;
-    padding: 0.1em;
-    text-decoration: none;
-    border-width: 0 0 1px;
-    border-style: dotted;
-    border-color: #dfdfdf;
-}
-.news-by-year > section > .news-list > li > a:hover {
-    text-decoration: underline;
 }
