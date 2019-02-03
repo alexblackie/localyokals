@@ -8,19 +8,19 @@ programs for people with disabilities.
 
 ## Development
 
-This website is built using the [Eleventy][2] build system. You will need NodeJS
-and NPM installed.
+This website is built using the [Middleman][2] build system. You will need a
+recent version of Ruby installed, and the `bundler` Gem.
 
 Install dependencies:
 
 ```
-$ npm install
+$ bundle install
 ```
 
 Then build the site:
 
 ```
-$ npx eleventy
+$ bundle exec middleman build
 ```
 
 The built output will be in `./build`.
@@ -28,10 +28,10 @@ The built output will be in `./build`.
 To start a local development server, use:
 
 ```
-$ npx eleventy --serve
+$ bundle exec middleman serve
 ```
 
-[2]: https://www.11ty.io/
+[2]: https://middlemanapp.com/
 
 ## CI
 

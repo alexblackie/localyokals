@@ -4,9 +4,10 @@ name: default
 
 steps:
 - name: build
-  image: node
+  image: ruby
   commands:
-    - bin/compile
+    - bundle install --deployment
+    - bundle exec middleman build --verbose
   volumes:
     - name: cache
       path: /drone/src/build
@@ -37,4 +38,6 @@ trigger:
 
 ---
 kind: signature
-hmac: 5e02c1304903bb3c59b2be97fb144269a3893efeaaf7a2cf140fea310928acfa
+hmac: 13fb19051fd60d2d9627784cce8d24413c0d17039cf141ca321a5809dfa87af6
+
+...
