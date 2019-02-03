@@ -11,12 +11,12 @@
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(0,0,0,0.2);
   color: white;
-  background: #CD1A2C;
-  border: 3px solid #b61727;
+  background: $color-highlight;
+  border: 3px solid $color-highlight-dark;
   border-radius: 5px;
 }
   .button:hover {
-    color: white;
-    background-color: #b61727;
-    border-color: #a01422;
+    color: $color-text-inverse;
+    background-color: $color-highlight-dark;
+    border-color: $color-highlight-dark;
   }

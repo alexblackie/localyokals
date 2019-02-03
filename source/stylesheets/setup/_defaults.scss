@@ -10,15 +10,16 @@ body {
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
+  color: $color-text;
 }
 
 a {
   text-decoration: underline;
-  color: #CD1A2C;
+  color: $color-highlight;
 }
 
 a:hover {
-  color: #e21e32;
+  color: $color-highlight-dark;
 }
 
 ol,
@@ -60,7 +61,7 @@ blockquote {
   font-style: italic;
   border-width: 0 0 0 10px;
   border-style: solid;
-  border-color: #ccc;
+  border-color: $color-border;
 }
 
 img {
