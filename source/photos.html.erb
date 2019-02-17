@@ -5,136 +5,23 @@ stylesheets: ["lightbox"]
 javascripts: ["jquery.min", "lightbox"]
 ---
 
-<section class="gallery" id="boating">
+<% data.photos.galleries.each do |gallery| %>
+<section class="gallery" id="<%= gallery.slug %>">
   <header>
-    <h1>Boating &amp; Fishing</h1>
+    <h1><%= gallery.name %></h1>
   </header>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/boating/boat01.jpg" class="lightbox"><img src="/images/gallery/boating/thumbs/boat01_thumb.jpg" width="171" height="128" alt="Boat01 thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/boating/boat02.jpg" class="lightbox"><img src="/images/gallery/boating/thumbs/boat02_thumb.jpg" width="171" height="128" alt="Boat02 thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/boating/boat03.jpg" class="lightbox"><img src="/images/gallery/boating/thumbs/boat03_thumb.jpg" width="171" height="128" alt="Boat03 thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/boating/boat04.jpg" class="lightbox"><img src="/images/gallery/boating/thumbs/boat04_thumb.jpg" width="171" height="128" alt="Boat04 thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/boating/boat05.jpg" class="lightbox"><img src="/images/gallery/boating/thumbs/boat05_thumb.jpg" width="171" height="128" alt="Boat05 thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/boating/boat06.jpg" class="lightbox"><img src="/images/gallery/boating/thumbs/boat06_thumb.jpg" width="171" height="128" alt="Boat06 thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/boating/boat07.jpg" class="lightbox"><img src="/images/gallery/boating/thumbs/boat07_thumb.jpg" width="171" height="128" alt="Boat07 thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/boating/fishing01.jpg" class="lightbox"><img src="/images/gallery/boating/thumbs/fishing01_thumb.jpg" width="171" height="128" alt="Fishing01 thumb" /></a>
-    </figure>
-  </article>
+
+  <ul class="gallery-photos">
+  <% gallery.photos.each do |photo| %>
+    <li class="photo">
+      <a href="/images/gallery/<%= gallery.slug %>/<%= photo.slug %>.jpg" class="lightbox" title="<%= photo.slug %>">
+        <img src="/images/gallery/<%= gallery.slug %>/thumbs/<%= photo.slug %>_thumb.jpg" width="171" height="128" alt="<%= photo.alt %>">
+      </a>
+    </li>
+  <% end %>
+  </ul>
 </section>
-<section class="gallery" id="aroundthefarm">
-  <header>
-    <h1>Around the Farm</h1>
-  </header>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/022.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/022_thumb.jpg" width="170" height="128" alt="022 thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/061.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/061_thumb.jpg" width="170" height="128" alt="061 thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/068.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/068_thumb.jpg" width="170" height="128" alt="068 thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/072.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/072_thumb.jpg" width="170" height="128" alt="072 thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/50-th-annual-picnic.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/50-th-annual-picnic_thumb.jpg" width="170" height="128" alt="50 th annual picnic thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/alex-from-ocean-radio-station-2.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/alex-from-ocean-radio-station-2_thumb.jpg" width="170" height="128" alt="Alex from ocean radio station 2 thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/chicken-tractor-2.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/chicken-tractor-2_thumb.jpg" width="170" height="128" alt="Chicken tractor 2 thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/finising-our-sign.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/finising-our-sign_thumb.jpg" width="170" height="128" alt="Finising our sign thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/friends-in-the-garden-dleft-to-right-leo-doug-andrichard.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/friends-in-the-garden-dleft-to-right-leo-doug-andrichard_thumb.jpg" width="170" height="128" alt="Friends in the garden dleft to right leo doug andrichard thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/home-made-composter.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/home-made-composter_thumb.jpg" width="170" height="128" alt="Home made composter thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/picture-032.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/picture-032_thumb.jpg" width="170" height="128" alt="Picture 032 thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/punpkin-harvesting.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/punpkin-harvesting_thumb.jpg" width="170" height="128" alt="Punpkin harvesting thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/the-squash-patch.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/the-squash-patch_thumb.jpg" width="170" height="128" alt="The squash patch thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/these-hole-are-made-by-nematodes-garden-pests.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/these-hole-are-made-by-nematodes-garden-pests_thumb.jpg" width="170" height="128" alt="These hole are made by nematodes garden pests thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/tomatoes-on-the-run.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/tomatoes-on-the-run_thumb.jpg" width="170" height="128" alt="Tomatoes on the run thumb" /></a>
-    </figure>
-  </article>
-  <article class="photo">
-    <figure>
-      <a href="/images/gallery/around-the-farm/volunteers-from-pearson-colege.jpg" class="lightbox"><img src="/images/gallery/around-the-farm/thumbs/volunteers-from-pearson-colege_thumb.jpg" width="170" height="113" alt="Volunteers from pearson colege thumb" /></a>
-    </figure>
-  </article>
-</section>
+<% end %>
 
 <script>
   window.onload = function () {

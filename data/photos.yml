@@ -1,0 +1,84 @@
+---
+
+galleries:
+  - name: Boating &amp; Fishing
+    slug: boating
+    photos:
+      - slug: boat01
+        alt: Man standing beside boat on a lakeside.
+        caption: Launching a boat
+      - slug: boat02
+        alt: View aboard a pedalboat overlooking an open lake.
+        caption: The view on the lake
+      - slug: boat03
+        alt: A man overlooks the bottom half of a boat in the grass.
+        caption: Unloading the boats
+      - slug: boat04
+        alt: A speedboat on a trailer in a driveway.
+        caption: The speedboat
+      - slug: boat05
+        alt: A man sits in a shored pedalboat.
+        caption: Ready to launch.
+      - slug: boat06
+        alt: Interior of a speedboat from behind.
+        caption: Inside the speedboat.
+      - slug: boat07
+        alt: Two speedboats side-by-side sitting on the
+        caption: Inside the speedboat.
+      - slug: fishing01
+        alt: Two speedboats side-by-side sitting on the
+        caption: Inside the speedboat.
+
+  - name: Around the Farm
+    slug: around-the-farm
+    photos:
+      - slug: "022"
+        alt: A red flower
+        caption: ""
+      - slug: "061"
+        alt: Pink flowers
+        caption: ""
+      - slug: "068"
+        alt: A peacock sitting in a tree
+        caption: Peacock
+      - slug: "072"
+        alt: Leafy vegetables in a garden
+        caption: ""
+      - slug: "50-th-annual-picnic"
+        alt: A field foremost; a red barn beside a popup tent behind.
+        caption: 50th annual picnic
+      - slug: "alex-from-ocean-radio-station-2"
+        alt: Woman standing in sunflower patch
+        caption: Alex visits from The Ocean radio station.
+      - slug: chicken-tractor-2
+        alt: An angular cage encloses a group of chickens.
+        caption: A "chicken tractor" allows us to move where the chickens roam to tend the soil.
+      - slug: finising-our-sign
+        alt: A man stands behind a chain fence beside a scarecrow; "Local Yokels" is spelled with ribbon tied in the fence.
+        caption: Finishing our sign
+      - slug: friends-in-the-garden-dleft-to-right-leo-doug-andrichard
+        alt: Three men pose for the camera in the middle of a freshly-tilled garden.
+        caption: Friends in the garden (From left to right - Leo, Doug, and Richard).
+      - slug: home-made-composter
+        alt: A wooden box is covered by a plastic sheet mounted at an angle above it.
+        caption: Home made composter
+      - slug: picture-032
+        alt: Two rows of a garden pictured, a sign at the front of each; one reads "Onions" and the other "Carrots"
+        caption: Onions and Carrots growing in the garden.
+      - slug: punpkin-harvesting
+        alt: A pumpkin patch
+        caption: Pumpkin Harvesting
+      - slug: the-squash-patch
+        alt: A row of large green leaves; squash plants.
+        caption: The Squash Patch
+      - slug: these-hole-are-made-by-nematodes-garden-pests
+        alt: A man points to small holes bored into potatoes.
+        caption: These holes are made by garden pests called Nematodes.
+      - slug: tomatoes-on-the-run
+        alt: A field of tomato vines
+        caption: Tomatoes on the run
+      - slug: volunteers-from-pearson-colege
+        alt: Five young adults stand behind a table.
+        caption: Volunteers from Pearson College
+
+
