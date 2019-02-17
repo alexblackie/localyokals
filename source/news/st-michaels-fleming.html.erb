@@ -16,22 +16,16 @@ javascripts: ["jquery.min", "lightbox"]
 
 <div class="tiles tiles-two-up">
 	<figure>
-    <a href="/images/news/st-michaels-fleming/before.jpg" class="lightbox">
-      <img src="/images/news/st-michaels-fleming/before_thumb.jpg">
+    <a href="/images/news/st-michaels-fleming/before.jpg" data-fancybox="gallery" data-caption="Before">
+      <img src="/images/news/st-michaels-fleming/before_thumb.jpg" alt="An orchard covered in green overgrowth.">
     </a>
 		<figcaption>Before</figcaption>
   </figure>
 
 	<figure>
-    <a href="/images/news/st-michaels-fleming/after.jpg" class="lightbox">
-      <img src="/images/news/st-michaels-fleming/after_thumb.jpg">
+    <a href="/images/news/st-michaels-fleming/after.jpg" data-fancybox="gallery" data-caption="After">
+      <img src="/images/news/st-michaels-fleming/after_thumb.jpg" alt="Overhead shot of cleaned orchard; a pile of removed brush sits on a tarp.">
     </a>
     <figcaption>After</figcaption>
   </figure>
 </div>
-
-<script>
-	window.onload = function () {
-		jQuery("a.lightbox").fancybox();
-  };
-</script>
