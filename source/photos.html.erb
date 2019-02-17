@@ -14,7 +14,7 @@ javascripts: ["jquery.min", "lightbox"]
   <ul class="gallery-photos">
   <% gallery.photos.each do |photo| %>
     <li class="photo">
-      <a href="/images/gallery/<%= gallery.slug %>/<%= photo.slug %>.jpg" class="lightbox" title="<%= photo.slug %>">
+      <a href="/images/gallery/<%= gallery.slug %>/<%= photo.slug %>.jpg" data-fancybox="<%= gallery.slug %>" data-caption="<%= photo.caption %>">
         <img src="/images/gallery/<%= gallery.slug %>/thumbs/<%= photo.slug %>_thumb.jpg" width="171" height="128" alt="<%= photo.alt %>">
       </a>
     </li>
@@ -22,9 +22,3 @@ javascripts: ["jquery.min", "lightbox"]
   </ul>
 </section>
 <% end %>
-
-<script>
-  window.onload = function () {
-    jQuery("a.lightbox").fancybox();
-  };
-</script>
