@@ -1,6 +1,76 @@
 ---
 
 galleries:
+  - name: Bryn Place
+    slug: bryn
+    photos:
+      - slug: bryn-house
+        alt: An open-air wood structure covering a table and lawnchair.
+      - slug: bobcat-01
+        alt: A skidsteer constructing a gravel road on a grassy hill.
+      - slug: bobcat-02
+        alt: A skidsteer carries dirt beside a lake
+      - slug: bobcat-03
+        alt: A skidsteer carries dirt up a hill.
+      - slug: bryn-05
+        alt: An open door shows the interior of an empty shed.
+      - slug: bryn-06
+        alt: A man sits under a wood gazebo.
+      - slug: bryn-after-01
+        alt: A clear field foremost; uncleared brush behind.
+      - slug: bryn-after-chips-02
+        alt: A row of woodchips covering an excavated area.
+        caption: After adding woodchips.
+      - slug: bryn-after-chips
+        alt: A row of woodchips foremost; a small lake in the background.
+        caption: After adding woodchips.
+      - slug: bryn-before-01
+        alt: Uncut grass and weeds surround a beehive.
+      - slug: bryn-before-02
+        alt: Trees overhang a grassy area enclosing a lawnchair.
+      - slug: bryn-before-03
+        alt: Weeds and long grass surround a wooden beehive.
+      - slug: bryn-before-04
+        alt: A pile of dead brush burns beside a small lake.
+      - slug: bryn-boats
+        alt: Two paddleboats lean vertically against a shed in an open grassy field.
+      - slug: bryn-dock
+        alt: A man smokes sitting on a wooden dock overlooking a small lake.
+      - slug: bryn-garden-before-01
+        alt: A fenced off area houses overgrown grass and weeds
+      - slug: bryn-garden-before-02
+        alt: A fenced off area houses overgrown grass and weeds
+      - slug: bryn-trailer
+        alt: An RV trailer is parked in a field beside a Jeep.
+      - slug: bryn-vancity
+        alt: Richard holds a Vancity cheque in front of a small lake.
+      - slug: chickens-1
+        alt: A fenced off area houses long grass and chickens.
+      - slug: chickens-2
+        alt: Through a chain-link fence there are chickens roaming.
+      - slug: st-michaels-01
+        alt: St. Michael's School students mingle.
+      - slug: st-michaels-02
+        alt: St. Michael's School students pose for a group photo.
+        caption: Thank you St. Michael's students!
+      - slug: st-michaels-03
+        alt: Close-up of a gecko being held in a hand.
+      - slug: st-michaels-04
+        alt: St. Michael's School students help spread woodchips
+        caption: St. Michael's students help to spread woodchips
+      - slug: st-michaels-05
+        alt: St. Michael's School students pose for the camera.
+      - slug: st-michaels-06
+        alt: St. Michael's School students help spread woodchips; a small lake in the background.
+        caption: St. Michael's students help to spread woodchips
+      - slug: st-michaels-07
+        alt: St. Michael's School students taking a break.
+      - slug: st-michaels-08
+        alt: St. Michael's School students post for a group photo in front of a small lake on woodchips.
+        caption: Thank you St. Michael's students!
+      - slug: st-michaels-09
+        alt: St. Michael's School students head back towards a schoolbus.
+
   - name: Boating &amp; Fishing
     slug: boating
     photos:
