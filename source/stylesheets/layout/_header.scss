@@ -24,6 +24,7 @@
     background-image: url("/images/scarecrow.png");
     background-position: 0 50%;
     background-repeat: no-repeat;
+    background-size: $height-header - 1rem;
   }
     .site-header-logo h1 > a {
       text-decoration: none;
