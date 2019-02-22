@@ -4,10 +4,12 @@
 
 $palette-red: #CD1A2C;
 $palette-red-dark: darken($palette-red, 10%);
+$palette-green: #18B2AC;
 $palette-yellow: #CCBA1A;
 $palette-black: black;
 $palette-white: white;
 $palette-grey: gainsboro;
+$palette-dark-grey: grey;
 
 
 // ----------------------------------------------------------------------------
@@ -17,9 +19,11 @@ $palette-grey: gainsboro;
 $color-highlight: $palette-red;
 $color-highlight-dark: $palette-red-dark;
 $color-highlight-alt: $palette-yellow;
+$color-highlight-inverse: $palette-green;
 
 $color-text: $palette-black;
 $color-text-inverse: $palette-white;
+$color-text-light: $palette-dark-grey;
 
 $color-border: $palette-grey;
 

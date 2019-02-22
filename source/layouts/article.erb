@@ -2,6 +2,9 @@
   <article class="news single">
     <header>
       <h1><%= current_page.data.title %></h1>
+      <% if current_page.data.date %>
+        <div class="news-meta"><%= current_page.data.date.strftime("%B %-d %Y") %></div>
+      <% end %>
     </header>
 
     <div class="post-meat">

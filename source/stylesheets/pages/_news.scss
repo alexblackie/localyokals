@@ -1,8 +1,87 @@
-.news-by-year > section {
+$border-radius-news-card: 0.5rem;
+
+.news-by-year {
+  section {
     margin: 0 0 2rem;
+  }
+
+  header {
+    position: absolute;
+    z-index: 8192;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: $color-highlight-inverse;
+    color: $color-text-inverse;
+    border-radius: 0.25rem;
+    box-shadow: 1px 1px 2px rgba(0,0,0, 0.2);
+
+    h2 {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1em;
+    }
+  }
 }
-.news-by-year > section > header h2 {
-    margin: 1em 0 0.5em;
-    font-size: 1.5rem;
-    line-height: 1.2em;
+
+.article-cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+
+  li {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 1rem;
+
+    &.full {
+      width: 90%;
+      float: none;
+      margin: auto;
+    }
+  }
+}
+
+.article-card {
+  position: relative;
+  display: block;
+  border-radius: $border-radius-news-card;
+  background: $color-background-content;
+  box-shadow: 0 1px 4px rgba(0,0,0, 0.3);
+
+  .article-card-body {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  img {
+    border-radius: $border-radius-news-card $border-radius-news-card 0 0;
+  }
+
+  cite {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.25em 0.5em;
+    font-size: 0.75em;
+    background: rgba(0,0,0, 0.75);
+    color: $color-text-inverse;
+  }
+}
+
+.news.single {
+  header {
+    margin: 1rem 0 2rem;
+
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .news-meta {
+    margin: 0.5rem 0 0;
+    text-transform: uppercase;
+    color: $color-text-light;
+  }
 }
