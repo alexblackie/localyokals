@@ -30,8 +30,15 @@
     </div></header>
 
     <% if current_page.data.show_title %>
-    <div class="page-title-hero"><div class="container">
+    <div class="page-title-hero <%= current_page.data.hero_text ? "with-text" : "" %>"><div class="container">
       <h1 class="page-title"><%= current_page.data.title %></h1>
+    </div></div>
+    <% end %>
+
+    <% if current_page.data.hero_text %>
+    <div class="page-hero"><div class="container">
+      <img src="/images/<%= current_page.data.hero_image %>" alt="<%= current_page.data.hero_image_alt %>">
+      <div class="page-hero-text"><%= current_page.data.hero_text %></div>
     </div></div>
     <% end %>
 

@@ -6,6 +6,7 @@ $palette-red: #CD1A2C;
 $palette-red-dark: darken($palette-red, 10%);
 $palette-green: #18B2AC;
 $palette-yellow: #CCBA1A;
+$palette-peach: #FAF5E6;
 $palette-black: black;
 $palette-white: white;
 $palette-grey: gainsboro;
@@ -29,6 +30,7 @@ $color-border: $palette-grey;
 
 $color-background-content: $palette-white;
 $color-background-header: $palette-white;
+$color-background-hero: $palette-peach;
 
 // ----------------------------------------------------------------------------
 // Box Model

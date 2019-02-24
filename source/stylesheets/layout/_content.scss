@@ -6,17 +6,21 @@
  */
 
 .contentwrapper {
-  padding: 1.25rem;
+  padding: 2rem 1.25rem 0;
   background: $color-background-content;
 }
 
 .content {
   width: 70%;
   float: left;
-}
 
-.content p {
-  line-height: 1.5em;
+  p {
+    line-height: 1.5em;
+  }
+
+  h1:first-child {
+    margin-top: 0;
+  }
 }
 
 .clear {

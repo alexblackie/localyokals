@@ -7,17 +7,22 @@
 .sidebar {
   width: 16rem;
   float: right;
-}
-  .sidebar h1 {
+
+  h2 {
     margin: 0 0 0.5em;
-    font-size: 2em;
   }
-  .sidebar .widget p {
-    line-height: 1.4em;
+
+  .widget {
+    p {
+      line-height: 1.4em;
+    }
+
+    .important {
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+    }
   }
-  .sidebar .widget .important {
-    text-align: center;
-  }
-  .sidebar .widget a {
-    text-decoration: none;
-  }
+}
