@@ -2,11 +2,4 @@
 
 set -euf -o pipefail
 
-RELEASE_ENV="${1:-production}"
-S3_BUCKET_NAME="localyokals-$RELEASE_ENV"
-
-aws s3 sync --exclude "*.svg" build/ "s3://$S3_BUCKET_NAME/"
-
-# The aws cli does not know what an svg is so we need to manually set as
-# content-type for it.
-aws s3 sync --exclude "*" --include "*.svg" --content-type "image/svg+xml" build/ "s3://$S3_BUCKET_NAME/"
+az storage blob sync --account-name localyokalsca -c '$web' -s build/
