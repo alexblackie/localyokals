@@ -54,7 +54,7 @@ img.alignright {
 }
 
 /* SVG background image lovingly taken from Wikipedia <3 */
-$color-highlight-svg: str-slice(quote($color-highlight), 2, -1);
+$color-highlight-svg: str-slice(quote("$color-highlight"), 2, -1);
 .external-link {
   display: inline-block;
   width: 12px;

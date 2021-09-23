@@ -1,5 +1,0 @@
-#!/bin/sh
-
-set -euf -o pipefail
-
-az storage blob sync --account-name localyokalsca -c '$web' -s build/

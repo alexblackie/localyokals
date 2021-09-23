@@ -1,0 +1,20 @@
+{{- define "main" -}}
+  {{ range $.Site.Data.photos.galleries }}
+  <section class="gallery" id="{{ .slug }}">
+    <header>
+      <h1>{{ .name | safeHTML }}</h1>
+    </header>
+
+    <ul class="gallery-photos">
+    {{ $gallerySlug := .slug }}
+    {{ range .photos }}
+      <li class="photo">
+        <a href="/images/gallery/{{ $gallerySlug }}/{{ .slug }}.jpg" data-fancybox="{{ $gallerySlug }}" data-caption="{{ .caption }}">
+          <img src="/images/gallery/{{ $gallerySlug }}/thumbs/{{ .slug }}_thumb.jpg" width="171" height="128" alt="{{ .alt }}">
+        </a>
+      </li>
+    {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+{{- end -}}

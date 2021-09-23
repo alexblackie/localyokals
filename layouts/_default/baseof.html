@@ -2,17 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title><%= current_page.data.title %> - Cultivating Local Yokals</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" type="text/css">
-    <link rel="stylesheet" href="/stylesheets/site.css" type="text/css">
-    <% current_page.data.stylesheets.each do |sheet| %>
-      <link rel="stylesheet" href="/stylesheets/<%= sheet %>.css" type="text/css">
-    <% end if current_page.data.stylesheets %>
-    <script async defer data-domain="localyokals.ca" src="https://plausible.io/js/plausible.js"></script>
-  </head>
-  <body class="<%= current_page.data.page_class %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" type="text/css">
+    {{- $style := resources.Get "scss/site.css.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css">
+    {{- range .Params.stylesheets -}}
+      {{- $substyle := resources.Get . | minify | fingerprint -}}
+      <link rel="stylesheet" href="{{ $substyle.Permalink }}" type="text/css">
+    {{- end }}
+    {{- if hugo.IsProduction -}}
+    <script async defer data-domain="localyokals.ca" src="https://plausible.io/js/plausible.js"></script>
+    {{- end }}
+  </head>
+  <body class="{{ .Params.page_class }}">
     <header class="site-header"><div class="container">
       <div class="site-header-logo">
         <h1><a href="/">Cultivating Local Yokals Society</a></h1>
@@ -30,22 +34,22 @@
       </nav>
     </div></header>
 
-    <% if current_page.data.show_title %>
-    <div class="page-title-hero <%= current_page.data.hero_text ? "with-text" : "" %>"><div class="container">
-      <h1 class="page-title"><%= current_page.data.title %></h1>
+    {{- if .Params.show_title -}}
+    <div class="page-title-hero{{ if .Params.hero_text }} with-text{{ end }}"><div class="container">
+      <h1 class="page-title">{{ .Title }}</h1>
     </div></div>
-    <% end %>
+    {{- end -}}
 
-    <% if current_page.data.hero_text %>
+    {{- if .Params.hero_text }}
     <div class="page-hero"><div class="container">
-      <img src="/images/<%= current_page.data.hero_image %>" alt="<%= current_page.data.hero_image_alt %>">
-      <div class="page-hero-text"><%= current_page.data.hero_text %></div>
+      <img src="/images/{{ .Params.hero_image }}" alt="{{ .Params.hero_image_alt }}">
+      <div class="page-hero-text">{{ .Params.hero_text | safeHTML }}</div>
     </div></div>
-    <% end %>
+    {{ end }}
 
     <div class="contentwrapper"><div class="container">
       <div class="content">
-        <%= yield %>
+        {{ block "main" . }}{{ end }}
       </div>
 
       <div class="sidebar">
@@ -64,13 +68,9 @@
       </div>
     </div></div>
 
-    <% current_page.data.javascripts.each do |script| %>
-      <script src="/javascripts/<%= script %>.js"></script>
-    <% end if current_page.data.javascripts %>
-
-    <% if build? %>
-      <script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,"script","//www.google-analytics.com/analytics.js","ga"); ga("create", "UA-60803324-1", "auto"); ga("send", "pageview");</script>
-    <% end %>
-
+    {{- range .Params.javascripts -}}
+    {{- $javascript := resources.Get . | fingerprint -}}
+    <script src="{{ $javascript.Permalink }}"></script>
+    {{- end }}
   </body>
 </html>
