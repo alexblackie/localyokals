@@ -10,5 +10,19 @@
   <div class="post-meat">
     {{ .Content }}
   </div>
+
+  {{ if .Params.gallery }}
+    <ul class="gallery-photos">
+      {{ range .Params.gallery }}
+      <li class="photo">
+        {{ $image := $.Resources.Get .name }}
+        <a href="{{ $image.RelPermalink }}" data-fancybox="gallery">
+          {{ $thumb := printf "200x150 %s" .crop | $image.Fill }}
+          <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ .alt }}">
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  {{ end }}
 </article>
 {{- end -}}
