@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .Title }} - {{ .Site.Title }}</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" type="text/css">
     {{- $style := resources.Get "scss/site.css.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css">
     {{- range .Params.stylesheets -}}
