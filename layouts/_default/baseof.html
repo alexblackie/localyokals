@@ -11,9 +11,6 @@
       {{- $substyle := resources.Get . | minify | fingerprint -}}
       <link rel="stylesheet" href="{{ $substyle.Permalink }}" type="text/css">
     {{- end }}
-    {{- if hugo.IsProduction -}}
-    <script async defer data-domain="localyokals.ca" src="https://plausible.io/js/plausible.js"></script>
-    {{- end }}
   </head>
   <body class="{{ .Params.page_class }}">
     <header class="site-header">
